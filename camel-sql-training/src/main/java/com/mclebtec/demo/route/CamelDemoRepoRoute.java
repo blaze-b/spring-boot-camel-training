@@ -27,16 +27,13 @@ import lombok.extern.slf4j.Slf4j;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Slf4j
-public class CamelDemoRoute extends RouteBuilder {
+public class CamelDemoRepoRoute extends RouteBuilder {
 
-	private static final Log logger = LogFactory.getLog(CamelDemoRoute.class);
-	private List resultSetList = new ArrayList();
-	
-	
-	
+	private static final Log logger = LogFactory.getLog(CamelDemoRepoRoute.class);
+	private List resultSetList = new ArrayList<>();
 	private PersonDetailsExtractor personDetailsExtractor;
 	@Autowired
-	public CamelDemoRoute(PersonDetailsExtractor personDetailsExtractor) {
+	public CamelDemoRepoRoute(PersonDetailsExtractor personDetailsExtractor) {
 		this.personDetailsExtractor = personDetailsExtractor;
 	}
 
