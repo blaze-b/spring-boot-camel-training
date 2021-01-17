@@ -12,8 +12,6 @@ public class CamelSqlMainClass {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         SpringApplication.run(CamelSqlMainClass.class, args);
-        while (true) {
-        }
     }
 
 }
