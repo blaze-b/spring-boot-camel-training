@@ -1,4 +1,4 @@
-package com.sprinboot.integration.camel.springboot_camelinaction;
+package com.sprinboot;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
