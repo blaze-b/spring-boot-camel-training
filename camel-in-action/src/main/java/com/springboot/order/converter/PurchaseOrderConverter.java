@@ -1,5 +1,6 @@
 package com.springboot.order.converter;
 
+import com.springboot.order.pojo.PurchaseOrder;
 import org.apache.camel.Converter;
 import org.apache.camel.Exchange;
 import org.apache.camel.TypeConverter;

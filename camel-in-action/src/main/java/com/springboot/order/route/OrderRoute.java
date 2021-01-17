@@ -9,6 +9,8 @@ import org.springframework.context.support.AbstractXmlApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
+import static org.apache.camel.Exchange.FILE_NAME;
+
 
 @Component
 public class OrderRoute extends RouteBuilder {
@@ -34,7 +36,7 @@ public class OrderRoute extends RouteBuilder {
             public void process(Exchange exchange) throws Exception {
                 producerTemplate.sendBodyAndHeader("activemq:queue:testBean",
                         "<?xml version=\"1.0\"?><order>" + "<amount>1</amount><name>Camel in Action</name></order>",
-                        Exchange.FILE_NAME, "order.xml");
+                        FILE_NAME, "order.xml");
             }
         });
 

@@ -1,7 +1,7 @@
 package com.springboot.order.route;
 
 
-import com.springboot.order.converter.PurchaseOrder;
+import com.springboot.order.pojo.PurchaseOrder;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.ProducerTemplate;

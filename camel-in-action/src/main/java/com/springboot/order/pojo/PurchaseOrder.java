@@ -1,4 +1,4 @@
-package com.springboot.order.converter;
+package com.springboot.order.pojo;
 
 import java.math.BigDecimal;
 import java.lang.String;
