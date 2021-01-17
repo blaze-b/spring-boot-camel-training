@@ -18,7 +18,7 @@
 
 	<!-- this is the order service bean we use in the routes -->
 	<bean id="orderService"
-		class="com.springboot.order.OrderService" />
+		class="com.mclebtec.demo.order.OrderService" />
 
 	<!-- this is the camel context, notice how we refer to the default error 
 		handler as the context scoped error handler -->
