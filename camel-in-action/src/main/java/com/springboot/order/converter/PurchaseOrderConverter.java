@@ -13,9 +13,8 @@ public class PurchaseOrderConverter {
     public static PurchaseOrder toPurchaseOrder(byte[] data, Exchange exchange) {
         TypeConverter converter = exchange.getContext().getTypeConverter();
         String s = converter.convertTo(String.class, data);
-        if (s == null || s.length() < 30) {
+        if (s == null || s.length() < 30)
             throw new IllegalArgumentException("data is invalid");
-        }
         s = s.replaceAll("##START##", "");
         s = s.replaceAll("##END##", "");
         String name = s.substring(0, 9).trim();
@@ -24,8 +23,7 @@ public class PurchaseOrderConverter {
         BigDecimal price = new BigDecimal(s2);
         Integer amount = converter.convertTo(Integer.class, s3);
         price.setScale(2);
-        PurchaseOrder order = new PurchaseOrder(name, price, amount);
-        return order;
+        return new PurchaseOrder(name, price, amount);
     }
 
 }
