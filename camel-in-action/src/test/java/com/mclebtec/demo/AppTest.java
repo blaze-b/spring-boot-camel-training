@@ -1,4 +1,4 @@
-package com.sprinboot;
+package com.mclebtec.demo;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
