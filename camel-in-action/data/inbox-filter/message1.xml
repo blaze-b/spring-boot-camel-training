@@ -1,2 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<order name="motor" amount="1" customer="honda"/>
+<?xml version="1.0"?><order customer="retail"><item>widget</item></order>
