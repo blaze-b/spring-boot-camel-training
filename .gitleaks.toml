@@ -1,0 +1,17 @@
+title = "spring-integration-learning"
+
+[extend]
+useDefault = true
+
+# Regex-only allowlists (no path allowlists).
+[[allowlists]]
+description = "Maven coordinates and Camel package names containing generic tokens"
+regexTarget = "match"
+regexes = [
+  '''(?i)com\.blazeb\.camel''',
+  '''(?i)spring-integration-learning''',
+  '''(?i)enrolment''',
+  '''(?i)ACTIVEMQ_(USER|PASSWORD|BROKER_URL|QUEUE_NAME)''',
+  '''(?i)ENROLMENT_DB_(URL|USER|PASSWORD)''',
+  '''(?i)KAFKA_BROKERS''',
+]

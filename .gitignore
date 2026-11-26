@@ -31,3 +31,14 @@ build/
 ### VS Code ###
 .vscode/
 /.mvn/
+
+### Runtime / local ###
+*.log
+logs/
+data/out/
+**/data/out/
+.DS_Store
+*.jar
+!**/maven-wrapper.jar
+.env
+*.zip
